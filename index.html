@@ -3,7 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Vizionish — independent creative studio working in brand identity, art direction, and spatial visualization." />
     <title>Vizionish | Visions to Reality</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,43 +13,19 @@
     <link rel="stylesheet" href="/src/style.css">
   </head>
   <body>
-    <!-- HEADER -->
-    <header class="site-header">
-      <div class="header-left">
-        <div class="logo">VIZIONISH<span class="accent">.</span></div>
-        <div class="status-indicator">
-          <p>INDEPENDENT / AVAILABLE<br>FOR SELECT COMMISSIONS</p>
-        </div>
-      </div>
-      
-      <div class="header-right">
-        <nav class="main-nav">
-          <ul>
-            <li><a href="#work">WORK</a></li>
-            <li><a href="#practice">PRACTICE</a></li>
-            <li><a href="#about">ABOUT</a></li>
-            <li><a href="#contact">CONTACT</a></li>
-          </ul>
-        </nav>
-        <div class="coordinates">
-          38&deg;51'23.9"N<br>
-          77&deg;02'36.6"W
-        </div>
-      </div>
-    </header>
+    <div id="site-header-root"></div>
 
     <!-- HERO SECTION (VISIONS -> REALITY) -->
     <section class="hero" id="home">
-      <!-- We will assume the user has placed the image as hero-bg.png in public folder, or we use a gradient fallback for now -->
       <div class="hero-background"></div>
-      
+
       <div class="hero-content">
         <!-- Top Left -->
         <div class="hero-block input-state fade-in">
           <div class="state-label accent">00 / INPUT STATE</div>
           <h1 class="hero-title serif">VISIONS</h1>
         </div>
-        
+
         <!-- Top Right -->
         <div class="hero-block services-list fade-in">
           <ul>
@@ -58,7 +36,7 @@
             <li>SPATIAL VISUALIZATION</li>
           </ul>
         </div>
-        
+
         <!-- Center Bottom (Translation) -->
         <div class="hero-block translation fade-in">
           <div class="state-label accent">01 / TRANSLATION</div>
@@ -87,15 +65,14 @@
         </div>
         <div class="work-count"><span class="accent">01</span> &mdash; 04</div>
       </div>
-      
+
       <div class="work-grid">
         <!-- Project 1 (Featured) -->
         <article class="project-item featured-project reveal">
-          <div class="project-image-large placeholder-img image-reveal">
-            <!-- Replace with actual project image -->
-            <div class="img-inner" style="background: #111;"></div>
-          </div>
-          
+          <a class="project-image-large image-reveal" href="/work/room-tone.html">
+            <div class="img-inner project-art" style="--art-color:#ff5500;"><span class="mark">Room<br>Tone</span></div>
+          </a>
+
           <div class="project-info-large">
             <div class="project-meta-top">
               <span class="accent">01</span>
@@ -104,9 +81,9 @@
               <h3 class="project-title-large">ROOM TONE</h3>
               <p class="project-category">Brand Identity + Campaign <span class="year">2024</span></p>
             </div>
-            
+
             <p class="project-desc">A sonic brand system for a modern<br>listening space.</p>
-            
+
             <div class="project-process-grid">
               <div class="process-col">
                 <span class="col-title accent">INPUT</span>
@@ -121,17 +98,17 @@
                 <p>A complete sonic and<br>spatial brand system.</p>
               </div>
             </div>
-            
-            <a href="#" class="view-project-link">VIEW PROJECT <span class="accent">&nearr;</span></a>
+
+            <a href="/work/room-tone.html" class="view-project-link">VIEW PROJECT <span class="accent">&nearr;</span></a>
           </div>
         </article>
 
         <!-- Project 2, 3, 4 -->
         <div class="sub-projects-grid">
           <article class="project-item sub-project reveal">
-            <div class="project-image-small placeholder-img image-reveal">
-              <div class="img-inner" style="background: #1a1a1a;"></div>
-            </div>
+            <a class="project-image-small image-reveal" href="/work/nexora.html">
+              <div class="img-inner project-art" style="--art-color:#c9d3ff;"><span class="mark">Nexora</span></div>
+            </a>
             <div class="project-meta-small">
               <span class="accent">02</span>
               <div class="title-cat-row">
@@ -139,14 +116,14 @@
                 <span class="year">2024</span>
               </div>
               <p class="category">Brand Identity</p>
-              <a href="#" class="view-project-link">VIEW PROJECT <span class="accent">&nearr;</span></a>
+              <a href="/work/nexora.html" class="view-project-link">VIEW PROJECT <span class="accent">&nearr;</span></a>
             </div>
           </article>
-          
+
           <article class="project-item sub-project reveal" style="transition-delay: 0.1s">
-            <div class="project-image-small placeholder-img image-reveal">
-              <div class="img-inner" style="background: #222; display: flex; align-items: center; justify-content: center; font-family: var(--font-sans); letter-spacing: 0.2em;">AURORA<br>LABS</div>
-            </div>
+            <a class="project-image-small image-reveal" href="/work/aurora-labs.html">
+              <div class="img-inner project-art" style="--art-color:#aa3bff;"><span class="mark">Aurora<br>Labs</span></div>
+            </a>
             <div class="project-meta-small">
               <span class="accent">03</span>
               <div class="title-cat-row">
@@ -154,14 +131,14 @@
                 <span class="year">2025</span>
               </div>
               <p class="category">Visual System + Website</p>
-              <a href="#" class="view-project-link">VIEW PROJECT <span class="accent">&nearr;</span></a>
+              <a href="/work/aurora-labs.html" class="view-project-link">VIEW PROJECT <span class="accent">&nearr;</span></a>
             </div>
           </article>
-          
+
           <article class="project-item sub-project reveal" style="transition-delay: 0.2s">
-            <div class="project-image-small placeholder-img image-reveal">
-              <div class="img-inner" style="background: linear-gradient(180deg, #333, #000); display: flex; align-items: center; justify-content: center; font-family: var(--font-serif); letter-spacing: 0.2em;">VERTEX</div>
-            </div>
+            <a class="project-image-small image-reveal" href="/work/vertex.html">
+              <div class="img-inner project-art" style="--art-color:#47bfff;"><span class="mark">Vertex</span></div>
+            </a>
             <div class="project-meta-small">
               <span class="accent">04</span>
               <div class="title-cat-row">
@@ -169,7 +146,7 @@
                 <span class="year">2023</span>
               </div>
               <p class="category">Campaign Concept</p>
-              <a href="#" class="view-project-link">VIEW PROJECT <span class="accent">&nearr;</span></a>
+              <a href="/work/vertex.html" class="view-project-link">VIEW PROJECT <span class="accent">&nearr;</span></a>
             </div>
           </article>
         </div>
@@ -184,7 +161,7 @@
           <div class="h-line"></div>
         </div>
       </div>
-      
+
       <div class="practice-content reveal">
         <div class="practice-left">
           <p class="practice-statement">
@@ -213,7 +190,7 @@
           <div class="h-line"></div>
         </div>
       </div>
-      
+
       <div class="approach-grid reveal">
         <div class="approach-col">
           <h3 class="accent">INPUT</h3>
@@ -259,7 +236,7 @@
           <div class="h-line"></div>
         </div>
       </div>
-      
+
       <div class="about-content reveal">
         <div class="about-text-container">
           <p class="about-text">
@@ -267,31 +244,12 @@
             pulled through a creative process and emerges<br>
             as something real.
           </p>
-          <a href="#" class="read-more">READ MORE ABOUT VIZIONISH <span class="accent">&rarr;</span></a>
+          <a href="/about/" class="read-more magnetic">READ MORE ABOUT VIZIONISH <span class="accent">&rarr;</span></a>
         </div>
       </div>
     </section>
 
-    <!-- FOOTER / CONTACT -->
-    <footer class="site-footer section-padding" id="contact">
-      <div class="footer-cta reveal">
-        <h2 class="footer-headline serif">HAVE A<br>VISION?</h2>
-        <div class="footer-arrow"><span class="accent">&rarr;</span></div>
-        <h2 class="footer-headline right serif">LET'S MAKE<br>IT <span class="accent">REAL.</span></h2>
-      </div>
-      
-      <div class="footer-bottom reveal">
-        <a href="mailto:hello@vizionish.com" class="start-conversation accent">START A CONVERSATION &nearr;</a>
-        <div class="footer-links">
-          <a href="mailto:hello@vizionish.com">HELLO@VIZIONISH.COM</a>
-          <span>|</span>
-          <a href="#">INSTAGRAM</a>
-          <span>|</span>
-          <a href="#">LINKEDIN</a>
-        </div>
-        <div class="copyright">&copy; 2026 VIZIONISH.</div>
-      </div>
-    </footer>
+    <div id="site-footer-root"></div>
 
     <script type="module" src="/src/main.js"></script>
   </body>
